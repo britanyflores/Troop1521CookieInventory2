@@ -38,6 +38,7 @@ Partial Class userForm
         Me.gradeTB = New System.Windows.Forms.TextBox()
         Me.noteTE = New System.Windows.Forms.RichTextBox()
         Me.submit = New System.Windows.Forms.Button()
+        Me.cancel = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'Label1
@@ -180,18 +181,29 @@ Partial Class userForm
         'submit
         '
         Me.submit.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.submit.Location = New System.Drawing.Point(303, 416)
+        Me.submit.Location = New System.Drawing.Point(325, 416)
         Me.submit.Name = "submit"
         Me.submit.Size = New System.Drawing.Size(96, 33)
         Me.submit.TabIndex = 15
         Me.submit.Text = "Submit"
         Me.submit.UseVisualStyleBackColor = True
         '
+        'cancel
+        '
+        Me.cancel.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.cancel.Location = New System.Drawing.Point(66, 416)
+        Me.cancel.Name = "cancel"
+        Me.cancel.Size = New System.Drawing.Size(96, 33)
+        Me.cancel.TabIndex = 16
+        Me.cancel.Text = "Cancel"
+        Me.cancel.UseVisualStyleBackColor = True
+        '
         'userForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(784, 461)
+        Me.Controls.Add(Me.cancel)
         Me.Controls.Add(Me.submit)
         Me.Controls.Add(Me.noteTE)
         Me.Controls.Add(Me.gradeTB)
@@ -231,4 +243,5 @@ Partial Class userForm
     Friend WithEvents gradeTB As TextBox
     Friend WithEvents noteTE As RichTextBox
     Friend WithEvents submit As Button
+    Friend WithEvents cancel As Button
 End Class
